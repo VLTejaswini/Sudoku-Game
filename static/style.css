@@ -1,0 +1,49 @@
+/* Style for the entire webpage */
+body {
+    font-family: Arial, sans-serif; /* Set the font style for the entire page */
+    text-align: center; /* Center align all text on the page */
+    background-color: #f4f4f4; /* Light gray background for the page */
+    margin: 0; /* Remove default margin around the body */
+    padding: 0; /* Remove default padding around the body */
+}
+
+/* Style for a container to center and structure content */
+.container {
+    margin: 20px auto; /* Add vertical margin and center the container horizontally */
+    max-width: 500px; /* Set the maximum width of the container */
+    padding: 20px; /* Add padding inside the container for spacing */
+    background: white; /* Set the background color of the container to white */
+    border-radius: 8px; /* Round the corners of the container */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for a 3D effect */
+}
+
+/* Style for the Sudoku board grid */
+#sudoku-board {
+    display: grid; /* Use a grid layout for the Sudoku board */
+    grid-template-columns: repeat(9, 1fr); /* Create 9 equal-width columns */
+    gap: 1px; /* Add a small gap between grid cells */
+    margin: 20px auto; /* Add vertical margin and center the board horizontally */
+}
+
+/* Style for each input cell in the Sudoku grid */
+#sudoku-board input {
+    width: 40px; /* Set the width of each cell */
+    height: 40px; /* Set the height of each cell */
+    text-align: center; /* Center the text inside the cell */
+    font-size: 20px; /* Set the font size for the numbers in the cells */
+    border: 1px solid #ccc; /* Add a light gray border around each cell */
+}
+
+/* Style for control buttons */
+.controls button {
+    margin: 5px; /* Add spacing between buttons */
+    padding: 10px 20px; /* Add padding inside the buttons for size */
+    font-size: 16px; /* Set the font size for button text */
+    cursor: pointer; /* Change the cursor to a pointer when hovering over buttons */
+}
+
+/* Style for the timer display */
+#timer {
+    margin-top: 20px; /* Add space above the timer */
+    font-size: 18px; /* Set the font size for the timer text */
+}

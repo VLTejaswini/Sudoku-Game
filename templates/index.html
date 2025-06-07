@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Declares the document type as HTML5 -->
+<head>
+    <meta charset="UTF-8">
+    <!-- Sets the character encoding to UTF-8 for supporting various text formats -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Ensures proper rendering and touch zooming on mobile devices -->
+    <title>Sudoku Game</title>
+    <!-- Sets the title of the web page to "Sudoku Game" -->
+    <link rel="stylesheet" href="/static/style.css">
+    <!-- Links an external CSS file for styling the page -->
+</head>
+<body>
+    <!-- Main content of the web page -->
+    <div class="container">
+        <!-- Wrapper for the Sudoku game elements -->
+        <h1>Sudoku Game</h1>
+        <!-- Displays the main heading of the page -->
+        <div id="sudoku-board"></div>
+        <!-- Placeholder div for the Sudoku board grid (to be populated dynamically) -->
+        <div class="controls">
+            <!-- Container for the control buttons -->
+            <button id="generate">Generate</button>
+            <!-- Button to generate a new Sudoku puzzle -->
+            <button id="solve">Solve</button>
+            <!-- Button to solve the current Sudoku puzzle -->
+            <button id="reset">Reset</button>
+            <!-- Button to reset the Sudoku board -->
+            <button id="hint">Hint</button>
+            <!-- New Hint Button: Provides a hint for a selected cell -->
+            <button id="music">Music</button>
+            <!-- Button to toggle background music on/off -->
+        </div>
+        <div id="timer">Time: 0s</div>
+        <!-- Displays a timer to track how long the game has been played -->
+    </div>
+    <audio id="background-music" loop>
+        <!-- Background music element, set to loop continuously -->
+        <source src="static/sounds.mp3" type="audio/mpeg">
+        <!-- Specifies the source of the audio file and its format -->
+    </audio>
+    <script src="/static/script.js"></script>
+    <!-- Links an external JavaScript file for game functionality -->
+</body>
+</html>
